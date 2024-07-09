@@ -5,7 +5,8 @@
 #
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)\
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
